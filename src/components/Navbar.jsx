@@ -28,10 +28,10 @@ const Navbar = () => {
                 </div>
                 <div className='flex gap-3 w-2/12 justify-end font-poppins'>
                     <Link to='/register'>
-                        <button className='text-[{17px}] text-[#ffffff] rounded-md font-semibold bg-[#16A34A] p-1 px-2 border border-[#16A34A] hover:scale-105 hover:bg-[#ffffff] hover:text-[#16A34A]'>Join Us</button>
+                        <button className='text-[17px] text-[#ffffff] rounded-md font-semibold bg-[#16A34A] p-1 px-2 border border-[#16A34A] hover:scale-105 hover:bg-[#ffffff] hover:text-[#16A34A]'>Join Us</button>
                     </Link>
                     <Link to='login'>
-                        <button className='text-[{17px}] text-[#ffffff] rounded-md font-semibold bg-[#2563EB] p-1 px-2 border border-[#2563eb] hover:scale-105 hover:bg-[#ffffff] hover:text-[#2563EB]'>Login</button>
+                        <button className='text-[17px] text-[#ffffff] rounded-md font-semibold bg-[#2563EB] p-1 px-2 border border-[#2563eb] hover:scale-105 hover:bg-[#ffffff] hover:text-[#2563EB]'>Login</button>
                     </Link>
                 </div>
             </div>
