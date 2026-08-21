@@ -1,12 +1,21 @@
 import React from 'react';
 import bannerImg from '../../assets/images/banner.png'
 import { Link } from 'react-router';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+Aos.init();
 
 const Banner = () => {
     return (
         <div className='bg-[#F8FAFC]'>
             <div className='max-h-150 py-14 flex mx-auto justify-between w-11/12'>
-                <div className='max-w-6/12'>
+                <div 
+                    data-aos='fade-right' 
+                    className='max-w-6/12'
+                    data-aos-delay="60"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out">
                     <h2 className='font-bold font-inter text-[50px] text-[#0F172A] w-11/12 py-4'>Bringing essential healthcare to every community</h2>
                     <h5 className='font-medium font-inter text-[19px] text-[#64748B] w-full p-0'>MediCamp Connect makes it simple to find, organize, and join medical camps near you. We connect communities with the care they need, when they need it.</h5>
                     <div className='py-5 flex gap-4'>
@@ -18,7 +27,11 @@ const Banner = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='max-w-117.25 flex justify-end'>
+                <div
+                    data-aos='fade-left' 
+                    className='max-w-117.25 flex justify-end'
+                    data-aos-delay="60"
+                    data-aos-duration="2000">
                     <img className='w-full h-auto object-contain' src={bannerImg} alt="" />
                 </div>
             </div>

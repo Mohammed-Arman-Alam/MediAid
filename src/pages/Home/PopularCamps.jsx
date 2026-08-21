@@ -1,6 +1,10 @@
 import React from 'react';
 import CampCard from '../../components/CampCard';
 import { Link } from 'react-router';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+Aos.init();
 
 const PopularCamps = () => {
     return (
@@ -9,12 +13,43 @@ const PopularCamps = () => {
                 <h1 className='font-inter font-bold text-[#0F172A] text-[40px] text-center h-13'>Popular Medical Camps</h1>
                 <h6 className='font-poppins font-medium text-[#334155] text-[17px] text-center'>The camps with highest participant count </h6>
                 <div className='grid grid-cols-3 md:gap-6 lg:gap-9 py-8'>
-                    <CampCard></CampCard>
-                    <CampCard></CampCard>
-                    <CampCard></CampCard>
-                    <CampCard></CampCard>
-                    <CampCard></CampCard>
-                    <CampCard></CampCard>
+                      <div 
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-easing="ease-in-out">
+                        <CampCard></CampCard>
+                      </div>
+                      <div 
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-easing="ease-in-out">
+                        <CampCard></CampCard>
+                      </div>
+                      <div 
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-easing="ease-in-out">
+                        <CampCard></CampCard>
+                      </div>
+                      <div 
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        data-aos-easing="ease-in-out">
+                        <CampCard></CampCard>
+                      </div>
+                      <div 
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        data-aos-easing="ease-in-out">
+                        <CampCard></CampCard>
+                      </div>
+                      <div 
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        data-aos-easing="ease-in-out">
+                        <CampCard></CampCard>
+                      </div>
+                    
                 </div>
                 <div className='flex justify-center'>
                     <Link to='allCamps'>

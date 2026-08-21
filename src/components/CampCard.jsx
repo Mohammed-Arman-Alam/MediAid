@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot, FaUserDoctor} from "react-icons/fa6";
 import { MdArrowRightAlt } from "react-icons/md";
-
 const CampCard = () => {
     return (
         <div className='max-h-112.5 rounded-md bg-[#F8FAFC30] border border-[#2563EB30] hover:scale-105'>
