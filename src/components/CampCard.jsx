@@ -6,7 +6,7 @@ import { FaLocationDot, FaUserDoctor} from "react-icons/fa6";
 import { MdArrowRightAlt } from "react-icons/md";
 const CampCard = () => {
     return (
-        <div className='max-h-112.5 rounded-md bg-[#F8FAFC30] border border-[#2563EB30] hover:scale-105'>
+        <div className='max-h-112.5 rounded-md bg-[#F8FAFC30] border border-[#2563EB30] transition-transform duration-300 hover:scale-105 hover:shadow-2xl shadow-[#2563EB20]'>
             <img className='max-h-50 rounded-t-md w-full' src={cardImg} alt="camp banner" />
             <h3 className='font-inter font-semibold text-[#0F172A] text-2xl  ml-3 mt-1'>DNA Health Hackathon</h3>
             <div className='flex gap-1 items-center ml-3'>
