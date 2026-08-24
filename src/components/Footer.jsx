@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-3 mt-5">
               {socialIcons.map(({icon, label }) => (
-                <a
+                <p
                   key={label}
                   href="#"
                   aria-label={label}
@@ -36,7 +36,7 @@ const Footer = () => {
                   transition-all duration-300 hover:-translate-y-1"
                 >
                   {icon}
-                </a>
+                </p>
               ))}
             </div>
           </div>
